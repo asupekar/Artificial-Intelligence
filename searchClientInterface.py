@@ -52,26 +52,3 @@ class DFSEvaluator(Evaluator):
 		super().__init__(lambda actions: -len(actions), lambda _:0)
 
 ######################################################################
-#                              
-#    aStarSearch(problem, evaluator, verbose=None, limit=None)
-#      *  problem -- an instance of Problem, containing the initial state
-#                    (an instance of WorldState) and a goal state checker
-#      *  evaluator -- an instance of Evaluator containing the functions to
-#                    to evaluate a state's "quality" 
-#      *  verbose=<number or None> -- if a number > 0 search will print
-#                    diagnostic information to the console each <number> cycles
-#                    if None, no diagnostic output
-#      *  limit=<number or None> -- if a number, search will terminate with failure
-#                    if no solution is found in that number of cycles.  If None, 
-#                    search will continue until a solution is found or all paths are
-#                    exhausted
-#
-#    Returns   (solution, stats)
-#       * solution is a list of "actions" if a solution is found, None otherwise.
-#         The type and meaning of "action" is determined by the client in the definition of WorldState
-#       * stats reports performance statistic.  It is a tuple of four numbers
-#              --  The amount of process time consumed by the search:  https://docs.python.org/3/library/time.html
-#               -- The number of loop iterations (nodes visited)
-#               -- The number of nodes skipped due to having been visited previously
-#               -- Maximum size of the search fringe
-					  
